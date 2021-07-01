@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Jaziel Juarez - Examen Front End</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600" rel="stylesheet">
+    <script async src="task.js"></script>
+</head>
+<body>
+
+<div class="screenlayer">
+    <div class="notice-card">
+        <div class="success-alter">¡Compra Exitosa!</div>
+        <div class="summary">
+            <div class="order-ban">Número de órden: <span>0</span> </div>
+            <div class="total-ban">total: $<span>0</span> </div>
+        </div>
+        <div class="return-button-area"><button>Regresar</button></div>
+    </div>
+</div>
+
+<div class="top-elegant">
+    <div class="current-order-number">Sin selección</div>
+</div>
+<div class="container">
+    <section class="order">
+        <div class="order-sort">
+            <div class="title">Órdenes de compra</div>
+            <div class="order-list-container">
+               <!-- EXAMPLE 
+                <ul class="order-list">
+                    <li class="order-list-item">
+                        <div class="id">17Y3D476GD3UH</div>
+                    </li>
+                </ul>
+            -->
+            </div>
+        </div>
+        <div class="order-detail">
+            <div class="title">Cesta</div>
+            <div class="order-table">
+                <div class="order-row head-row">
+                    <div class="order-item detail">Detalles</div>
+                    <div class="order-item price">Precio</div>
+                    <div class="order-item qty">Cantidad</div>
+                </div>
+
+                <!--Actual Order Content-->
+<div class="order-actual-content">
+
+<!-- EXAMPLE
+    <div class="order-row item-row">
+        <div class="order-item item-detail">
+            <div class="item-name">Nombre: <span>Nintendo Switch</span></div>
+            <div class="item-sku">SKU: <span>9DJND8DBU33F3</span></div>
+        </div>
+        <div class="order-item item-price">$ <span>9,000</span></div>
+        <div class="order-item item-qty">1</div>
+    </div>
+-->
+
+</div>
+                <div class="order-row last-row">
+                    <div class="order-item item-detail">
+                    </div>
+                    <div class="order-item item-total">Total: </div>
+                    <div class="order-item qty-total">$<span>0</span></div>
+                </div>
+            </div>
+            <div class="purchase-button-area"><button  type="submit">Comprar</button></div>
+
+
+        </div>
+    </section>
+    <section class="products">
+
+        <div class="product-container grid-container">
+
+        <div class="title">Agruegue más productos</div>
+
+            <label class="name-label" for="add-name">NOMBRE: </label>
+            <input class="name-input" type="text" id="add-name">
+            
+            <label class="qty-label" for="add-qty">CANTIDAD: </label>
+            <input class="qty-input" value="1" type="text" id="add-qty">
+
+            <label class="sku-label" for="add-sku">SKU: </label>
+            <input class="sku-input" type="text" id="add-sku">
+
+            <label class="price-label" for="add-price">PRECIO: </label>
+            <input class="price-input" value="100" type="text" id="add-price">
+
+            <div class="add-button-area"><button  type="submit">Añadir</button></div>
+
+        </div>
+
+    </section>
+</div>
+</body>
+</html>
